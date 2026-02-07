@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — JCA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JCA</span>
+                <span class="logo-divider">|</span>
+                <span class="logo-subtext">Joseph Coolidge Agency</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="divisions.html" class="nav-link">DIVISIONS</a></li>
+                <li><a href="cases.html" class="nav-link">CASES</a></li>
+                <li><a href="everett-files.html" class="nav-link classified">EVERETT FILES</a></li>
+                <li><a href="contact.html" class="nav-link active">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="classification-badge">UNCLASSIFIED // FOR OFFICIAL USE ONLY</div>
+            <h1 class="page-title">Secure Communications</h1>
+            <p class="page-subtitle">Report Information — Submit Tips — Request Assistance</p>
+        </div>
+    </section>
+
+    <!-- Security Notice -->
+    <section class="security-notice">
+        <div class="container">
+            <div class="notice-box">
+                <div class="notice-icon">🔒</div>
+                <div class="notice-content">
+                    <h3 class="notice-title">SECURITY NOTICE</h3>
+                    <p class="notice-text">
+                        All communications submitted through this portal are logged, monitored, and subject to 
+                        investigation. False statements to federal investigators may be prosecuted under 
+                        18 U.S.C. § 1001. This system is provided for official government business only.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <!-- Form -->
+                <div class="form-container">
+                    <h2 class="form-title">Submit Secure Communication</h2>
+                    <p class="form-description">
+                        Use this form to report information, submit tips, or request assistance from the 
+                        Joseph Coolidge Agency. All submissions are encrypted and reviewed by authorized personnel.
+                    </p>
+                    
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="contactType" class="form-label">Communication Type *</label>
+                            <select id="contactType" name="contactType" class="form-input" required>
+                                <option value="">Select Type</option>
+                                <option value="tip">Crime/Security Tip</option>
+                                <option value="threat">Immediate Threat Report</option>
+                                <option value="information">General Information</option>
+                                <option value="witness">Witness Information</option>
+                                <option value="foia">FOIA Request</option>
+                                <option value="employment">Employment Inquiry</option>
+                                <option value="media">Media Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Detailed Information *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="8" required></textarea>
+                            <div class="form-help">
+                                Provide as much detail as possible including dates, locations, names, and any 
+                                other relevant information.
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="location" class="form-label">Incident Location</label>
+                            <input type="text" id="location" name="location" class="form-input" 
+                                   placeholder="City, State">
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="anonymous" id="anonymous">
+                                <span>I wish to remain anonymous (Note: This may limit our ability to follow up)</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="urgent" id="urgent">
+                                <span>This is an urgent or time-sensitive matter</span>
+                            </label>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="acknowledge" id="acknowledge" required>
+                                <span>I acknowledge that false statements may be subject to criminal prosecution *</span>
+                            </label>
+                        </div>
+
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Submit Secure Communication</button>
+                            <button type="reset" class="btn btn-secondary">Clear Form</button>
+                        </div>
+
+                        <div class="form-notice">
+                            <strong>Privacy Notice:</strong> Information submitted through this form is subject to 
+                            the Privacy Act of 1974 and may be disclosed to authorized personnel on a need-to-know 
+                            basis. See our privacy policy for details.
+                        </div>
+                    </form>
+
+                    <div class="form-success" id="formSuccess" style="display: none;">
+                        <div class="success-icon">✓</div>
+                        <h3 class="success-title">Communication Received</h3>
+                        <p class="success-text">
+                            Your submission has been successfully received and logged. A unique reference number 
+                            has been assigned: <strong id="referenceNumber"></strong>
+                        </p>
+                        <p class="success-text">
+                            If you provided contact information, an investigator may reach out for additional 
+                            details. For urgent matters, please also contact our 24-hour operations center.
+                        </p>
+                        <button class="btn btn-primary" onclick="resetForm()">Submit Another Communication</button>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3 class="info-title">Emergency Contact</h3>
+                        <p class="info-text">
+                            For immediate threats or emergency situations requiring law enforcement response:
+                        </p>
+                        <div class="info-detail">
+                            <strong>24-Hour Operations Center</strong><br>
+                            Phone: <a href="tel:+12025550147">+1 (202) 555-0147</a><br>
+                            Available 24/7/365
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Headquarters</h3>
+                        <div class="info-detail">
+                            Joseph Coolidge Agency<br>
+                            Federal Building 7, Suite 2100<br>
+                            1847 Pennsylvania Avenue NW<br>
+                            Washington, DC 20006
+                        </div>
+                        <div class="info-detail">
+                            Main Switchboard: (202) 555-0100<br>
+                            Hours: Monday-Friday, 0800-1700 EST
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Secure Email</h3>
+                        <div class="info-detail">
+                            General Inquiries: info@jca.gov<br>
+                            Tips & Leads: tips@jca.gov<br>
+                            Media Relations: press@jca.gov<br>
+                            FOIA Requests: foia@jca.gov
+                        </div>
+                        <p class="info-note">
+                            Note: Email is not monitored 24/7. For urgent matters, call the operations center.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Anonymous Tip Line</h3>
+                        <p class="info-text">
+                            Report information anonymously through our secure tip line:
+                        </p>
+                        <div class="info-detail">
+                            Phone: 1-800-CALL-JCA<br>
+                            Web: tips.jca.gov/anonymous<br>
+                            Text: Text "JCA TIP" to 847411
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Field Office Locator</h3>
+                        <p class="info-text">
+                            Find your nearest JCA field office:
+                        </p>
+                        <a href="#" class="info-link">View All Field Offices →</a>
+                    </div>
+
+                    <div class="info-card warning-card">
+                        <h3 class="info-title">⚠ Security Warning</h3>
+                        <p class="info-text">
+                            Never send classified information through unencrypted channels. If you have classified 
+                            material to report, contact your security officer or call our secure line at 
+                            (202) 555-SCIF.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">Joseph Coolidge Agency</h4>
+                    <p class="footer-text">
+                        An independent federal agency operating under Title 50 authority, 
+                        reporting directly to the National Security Council.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About JCA</a></li>
+                        <li><a href="divisions.html">Divisions</a></li>
+                        <li><a href="cases.html">Case Files</a></li>
+                        <li><a href="contact.html">Submit Tip</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Emergency Contact</h4>
+                    <p class="footer-text">
+                        24-Hour Operations Center<br>
+                        +1 (202) 555-0147<br>
+                        tips@jca.gov (Secure)
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-legal">
+                    OFFICIAL GOVERNMENT WEBSITE — This system is monitored. 
+                    Unauthorized access is prohibited and punishable under 18 U.S.C. § 1030.
+                </p>
+                <p class="footer-classification">UNCLASSIFIED // FOUO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
