@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cases — JCA</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page-transition"></div>
+    
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JCA</span>
+                <span class="logo-divider">|</span>
+                <span class="logo-subtext">Joseph Coolidge Agency</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">HOME</a></li>
+                <li><a href="about.html" class="nav-link">ABOUT</a></li>
+                <li><a href="divisions.html" class="nav-link">DIVISIONS</a></li>
+                <li><a href="cases.html" class="nav-link active">CASES</a></li>
+                <li><a href="everett-files.html" class="nav-link classified">EVERETT FILES</a></li>
+                <li><a href="contact.html" class="nav-link">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <div class="classification-badge">UNCLASSIFIED // FOR OFFICIAL USE ONLY</div>
+            <h1 class="page-title">Active Investigations</h1>
+            <p class="page-subtitle">Case Management System — Updated 06 FEB 2026</p>
+        </div>
+    </section>
+
+    <!-- Filter Bar -->
+    <section class="filter-bar">
+        <div class="container">
+            <div class="filter-group">
+                <button class="filter-btn active" data-filter="all">All Cases</button>
+                <button class="filter-btn" data-filter="active">Active</button>
+                <button class="filter-btn" data-filter="archived">Archived</button>
+                <button class="filter-btn" data-filter="classified">Classified</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cases Grid -->
+    <section class="cases-section">
+        <div class="container">
+            <div class="cases-grid">
+                
+                <!-- Case 1 -->
+                <div class="case-card" data-status="active">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2026-1147</div>
+                        <div class="case-status status-active">ACTIVE</div>
+                    </div>
+                    <h3 class="case-title">Operation NIGHTFALL</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Counterintelligence</span>
+                        <span class="case-date">Opened: 18 JAN 2026</span>
+                    </div>
+                    <p class="case-summary">
+                        Investigation into suspected foreign intelligence operation targeting Department of Energy 
+                        personnel. Multiple subjects under surveillance. Evidence suggests coordinated recruitment 
+                        effort involving academic conferences and professional networking events.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Agent:</span>
+                            <span class="detail-value">SA Marcus Chen</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Field Office:</span>
+                            <span class="detail-value">Chicago</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value">HIGH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 2 -->
+                <div class="case-card" data-status="classified">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2025-0892</div>
+                        <div class="case-status status-classified">CLASSIFIED</div>
+                    </div>
+                    <h3 class="case-title">Operation EVERETT</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Cyber Operations</span>
+                        <span class="case-date">Opened: 03 MAR 2025</span>
+                    </div>
+                    <p class="case-summary">
+                        [REDACTED] investigation involving sophisticated network intrusion and data exfiltration. 
+                        Subject identified as Dr. Michael Everett, former NSA contractor. Case involves unauthorized 
+                        access to classified systems and potential espionage activity. 
+                        <a href="everett-files.html" class="case-link">View full dossier →</a>
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Agent:</span>
+                            <span class="detail-value">[REDACTED]</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Field Office:</span>
+                            <span class="detail-value">Alexandria</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value">CRITICAL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 3 -->
+                <div class="case-card" data-status="active">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2026-1089</div>
+                        <div class="case-status status-active">ACTIVE</div>
+                    </div>
+                    <h3 class="case-title">Treasury Network Breach</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Cyber Operations</span>
+                        <span class="case-date">Opened: 04 FEB 2026</span>
+                    </div>
+                    <p class="case-summary">
+                        Response to detected intrusion attempt on Treasury Department network infrastructure. 
+                        Attribution analysis ongoing. Initial assessment suggests state-sponsored advanced persistent 
+                        threat. Network defense protocols activated, forensic examination in progress.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Agent:</span>
+                            <span class="detail-value">SA Rachel Morrison</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Field Office:</span>
+                            <span class="detail-value">Headquarters</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value">HIGH</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 4 -->
+                <div class="case-card" data-status="archived">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2025-0634</div>
+                        <div class="case-status status-archived">ARCHIVED</div>
+                    </div>
+                    <h3 class="case-title">Operation SENTINEL</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Counterterrorism</span>
+                        <span class="case-date">Closed: 29 DEC 2025</span>
+                    </div>
+                    <p class="case-summary">
+                        Disruption of domestic terrorism financing network. Three subjects arrested, multiple accounts 
+                        frozen. Evidence revealed coordinated effort to funnel funds to designated terrorist 
+                        organizations through shell companies and cryptocurrency exchanges.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Agent:</span>
+                            <span class="detail-value">SA David Kowalski</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Field Office:</span>
+                            <span class="detail-value">New York</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome:</span>
+                            <span class="detail-value">SUCCESSFUL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 5 -->
+                <div class="case-card" data-status="active">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2026-1023</div>
+                        <div class="case-status status-active">ACTIVE</div>
+                    </div>
+                    <h3 class="case-title">Critical Infrastructure Analysis</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Analysis & Research</span>
+                        <span class="case-date">Opened: 22 JAN 2026</span>
+                    </div>
+                    <p class="case-summary">
+                        Threat assessment of vulnerabilities in regional power grid infrastructure. Collaboration 
+                        with Department of Energy and private utility companies. Focus on potential attack vectors 
+                        including cyber intrusion, physical sabotage, and insider threats.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Analyst:</span>
+                            <span class="detail-value">Dr. Sarah Kim</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Location:</span>
+                            <span class="detail-value">Pacific Northwest</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value">MEDIUM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 6 -->
+                <div class="case-card" data-status="archived">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2024-1891</div>
+                        <div class="case-status status-archived">ARCHIVED</div>
+                    </div>
+                    <h3 class="case-title">Operation CROSSWIND</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Field Operations</span>
+                        <span class="case-date">Closed: 14 NOV 2025</span>
+                    </div>
+                    <p class="case-summary">
+                        Interstate organized crime investigation targeting human trafficking network. Coordinated 
+                        raids across seven states resulted in 23 arrests and rescue of 41 victims. Case developed 
+                        through multi-year surveillance and confidential informant testimony.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Agent:</span>
+                            <span class="detail-value">SA Jennifer Torres</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Field Office:</span>
+                            <span class="detail-value">Miami</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Outcome:</span>
+                            <span class="detail-value">SUCCESSFUL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 7 -->
+                <div class="case-card" data-status="active">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2025-1956</div>
+                        <div class="case-status status-active">ACTIVE</div>
+                    </div>
+                    <h3 class="case-title">Public Corruption Task Force</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Field Operations</span>
+                        <span class="case-date">Opened: 08 NOV 2025</span>
+                    </div>
+                    <p class="case-summary">
+                        Investigation of alleged bribery and kickback scheme involving state-level procurement 
+                        contracts. Evidence collected includes financial records, recorded conversations, and 
+                        witness testimony. Grand jury proceedings ongoing.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Agent:</span>
+                            <span class="detail-value">SA Robert Hayes</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Field Office:</span>
+                            <span class="detail-value">Atlanta</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value">MEDIUM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 8 -->
+                <div class="case-card" data-status="classified">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2026-0012</div>
+                        <div class="case-status status-classified">CLASSIFIED</div>
+                    </div>
+                    <h3 class="case-title">[REDACTED]</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Intelligence</span>
+                        <span class="case-date">Opened: 03 JAN 2026</span>
+                    </div>
+                    <p class="case-summary">
+                        [INFORMATION RESTRICTED TO PERSONNEL WITH TS/SCI CLEARANCE]
+                        <br><br>
+                        Contact Intelligence Division for access authorization.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Clearance Required:</span>
+                            <span class="detail-value">TS/SCI</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Compartment:</span>
+                            <span class="detail-value">[REDACTED]</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value">CRITICAL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Case 9 -->
+                <div class="case-card" data-status="active">
+                    <div class="case-header">
+                        <div class="case-id">JCA-2026-0847</div>
+                        <div class="case-status status-active">ACTIVE</div>
+                    </div>
+                    <h3 class="case-title">Pharmaceutical Fraud Investigation</h3>
+                    <div class="case-meta">
+                        <span class="case-division">Field Operations</span>
+                        <span class="case-date">Opened: 29 JAN 2026</span>
+                    </div>
+                    <p class="case-summary">
+                        Federal investigation into alleged healthcare fraud scheme involving kickbacks, false 
+                        billing, and illegal distribution of controlled substances. Collaboration with DEA and 
+                        Department of Health and Human Services. Multiple search warrants executed.
+                    </p>
+                    <div class="case-details">
+                        <div class="detail-item">
+                            <span class="detail-label">Lead Agent:</span>
+                            <span class="detail-value">SA Amanda Brooks</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Field Office:</span>
+                            <span class="detail-value">Los Angeles</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="detail-label">Priority:</span>
+                            <span class="detail-value">MEDIUM</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 class="footer-title">Joseph Coolidge Agency</h4>
+                    <p class="footer-text">
+                        An independent federal agency operating under Title 50 authority, 
+                        reporting directly to the National Security Council.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About JCA</a></li>
+                        <li><a href="divisions.html">Divisions</a></li>
+                        <li><a href="cases.html">Case Files</a></li>
+                        <li><a href="contact.html">Submit Tip</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4 class="footer-title">Emergency Contact</h4>
+                    <p class="footer-text">
+                        24-Hour Operations Center<br>
+                        +1 (202) 555-0147<br>
+                        tips@jca.gov (Secure)
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-legal">
+                    OFFICIAL GOVERNMENT WEBSITE — This system is monitored. 
+                    Unauthorized access is prohibited and punishable under 18 U.S.C. § 1030.
+                </p>
+                <p class="footer-classification">UNCLASSIFIED // FOUO</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
