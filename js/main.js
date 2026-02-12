@@ -120,28 +120,45 @@ function initContactForm() {
     
     if (!form) return;
     
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        // Generate reference number
+    form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+
+    try {
+        const response = await fetch('https://formspree.io/f/mnjbppkn', {
+            method: 'POST',
+            body: formData,
+            headers: {
+                'Accept': 'application/json'
+            }
+        });
+
+        if (!response.ok) {
+            alert('There was an error submitting the form. Please try again.');
+            return;
+        }
+
+        // === Keep your original logic EXACTLY as built ===
+
         const refNumber = 'JCA-' + new Date().getFullYear() + '-' + 
-                         Math.floor(Math.random() * 10000).toString().padStart(4, '0');
-        
-        // Update reference number in success message
+            Math.floor(Math.random() * 10000).toString().padStart(4, '0');
+
         const refElement = document.getElementById('referenceNumber');
         if (refElement) {
             refElement.textContent = refNumber;
         }
-        
-        // Hide form, show success message
+
         form.style.display = 'none';
         if (formSuccess) {
             formSuccess.style.display = 'block';
+            formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
         }
-        
-        // Scroll to success message
-        formSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    });
+
+    } catch (error) {
+        alert('Network error. Please try again.');
+    }
+});
 }
 
 // Reset form function (called from button in success message)
